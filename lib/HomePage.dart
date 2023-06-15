@@ -19,26 +19,11 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   TextEditingController searchController = TextEditingController();
-  List<NewsModel> newsQueryList = [];
+  
   List<NewsModel> newsDataList = [];
   bool isLoading = true;
 
-  Future<List<NewsModel>> getNewsByQuery(String query) async {
-    String url =
-        "https://newsapi.org/v2/everything?q=$query&apiKey=10a66ab2cdf9422ea05c003b0db5be36";
-    final response = await http.get(Uri.parse(url));
-    var data = jsonDecode(response.body.toString());
-
-    if (response.statusCode == 200) {
-      final articles = data["articles"] as List<dynamic>;
-      for (Map<String, dynamic> article in articles) {
-        newsQueryList.add(NewsModel.fromAPItoAPP(article));
-      }
-      return newsQueryList;
-    } else {
-      return newsQueryList;
-    }
-  }
+ 
 
   Future<List<NewsModel>> getNewsData() async {
     String url =
