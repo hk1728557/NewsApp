@@ -1,8 +1,14 @@
 # news_app
 
-A new Flutter project.
+A News App Flutter project.
 
-## Getting Started
+## Output 
+![4a6b56bc-f1dd-4e12-bd6a-c2599e00828c](https://github.com/hk1728557/NewsApp/assets/90959033/7939d548-94e2-4201-a565-fa003a64a5a0)  ![d1579af5-23a6-4f7f-b69d-e30e9ee5323f](https://github.com/hk1728557/NewsApp/assets/90959033/acb2aa72-adb6-4c8f-bda6-f412f4e58273)
+
+
+
+
+
 
 This project is a starting point for a Flutter application.
 
